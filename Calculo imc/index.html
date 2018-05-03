@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cálculo do IMC</title>
+  <script src="scriptImc.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <br>
+    <h4>IMC é a sigla para
+      <b>Índice de Massa Corporal</b> que serve para avaliar o peso
+      <br> do indivíduo em relação à sua altura e assim indicar se está dentro do peso ideal, acima
+      <br> ou abaixo do peso desejado.</h4>
+    <h4>Estar dentro do peso certo é importante porque estar acima ou abaixo peso
+      <br> influencia na saúde, aumentando o risco de doenças como desnutrição quando se
+      <br> está abaixo do peso, e AVC e infarto, quando se está acima do peso. Assim, é
+      <br> comum os médicos, enfermeiros e nutricionistas avaliarem o peso da pessoa nas
+      <br>consultas de rotina para verificar a possibilidade de doenças que a pessoa pode
+      <br> estar pre-disposta.</h4>
+    <h2>Calculo do IMC</h2>
+    <h4>O cálculo do IMC deve ser feito usando a seguinte fórmula matemática: Peso ÷ altura x altura.</h4>
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="altura">Altura</label>
+        <input type="number" class="form-control" id="altura">
+      </div>
+      <div class="form-group">
+        <label for="peso">Peso</label>
+        <input type="number" class="form-control" id="peso">
+      </div>
+      <div class="form-group">
+        <label for="imc">IMC Resultado</label>
+        <input type="text" class="form-control" id="imc" disabled>
+      </div>
+      <button type="Calcular" class="btn btn-default" onclick="calcularImc()">Calcular</button>
+    </form>
+    <br>
+    <h4>A tabela a seguir indica os possíveis resultados do IMC, de acordo com a Organização Mundial da Saúde:</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Classificação</th>
+          <th>IMC</th>
+          <th>O que pode acontecer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Muito abaixo do peso</td>
+          <td>16 a 16,9 kg/m2</td>
+          <td>Queda de cabelo, infertilidade, ausência menstrual</td>
+        </tr>
+        <tr>
+          <td>Abaixo do peso</td>
+          <td>17 a 18,4 kg/m2</td>
+          <td>Fadiga, stress, ansiedade</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Peso normal</b>
+          </td>
+          <td>
+            <b>18,5 a 24,9 kg/m2</b>></td>
+          <td>Menor risco de doenças cardíacas e vasculares</td>
+        </tr>
+        <tr>
+          <td>Acima do peso</td>
+          <td>25 a 29,9 kg/m2</td>
+          <td>Fadiga, má circulação, varizes</td>
+        </tr>
+        <tr>
+          <td>Obesidade Grau I</td>
+          <td>30 a 34,9 kg/m2</td>
+          <td>Diabetes, angina, infarto, aterosclerose</td>
+        </tr>
+        <tr>
+          <td>Obesidade Grau II</td>
+          <td>35 a 40 kg/m2</td>
+          <td>Apneia do sono, falta de ar</td>
+        </tr>
+        <tr>
+          <td>Obesidade Grau III</td>
+          <td>maior que 40 kg/m2</td>
+          <td>Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Quem não estiver dentro do peso ideal deve adequar a alimentação e fazer
+      <br> exercícios para conseguir atingir o peso mais indicado para sua altura e idade.</h4>
+
+      <br>
+      <br>
+      <br>
+      <h3><a href="https://www.tuasaude.com/imc/">Referência ao uso do Cálculo do IMC</a></h3>
+  </div>
+ 
+</body>
+
+
+
+</html>
